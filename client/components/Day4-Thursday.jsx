@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WeekdayRows from './ShiftRows';
+import WeekdayRows from './WeekdayRows.jsx';
 
 const Thursday = () => {
   return (

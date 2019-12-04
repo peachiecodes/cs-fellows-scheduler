@@ -290,6 +290,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 
 /***/ }),
 
+/***/ "./client/components/ShiftRows.jsx":
+/*!*****************************************!*\
+  !*** ./client/components/ShiftRows.jsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar ShiftRows = function ShiftRows() {\n  var rows = [];\n\n  for (var i = 0; i < 8; i += 1) {\n    rows.push(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", {\n      id: \"row\"\n    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h4\", null, \"Hi, I am a shift row!\")));\n  }\n\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, rows);\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (ShiftRows);\n\n//# sourceURL=webpack:///./client/components/ShiftRows.jsx?");
+
+/***/ }),
+
 /***/ "./client/components/ShiftTimes.jsx":
 /*!******************************************!*\
   !*** ./client/components/ShiftTimes.jsx ***!
@@ -298,7 +310,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var reac
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './ShiftRows'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\n\nvar ShiftTimes = function ShiftTimes() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h3\", null, \"Monday\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(!(function webpackMissingModule() { var e = new Error(\"Cannot find module './ShiftRows'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }()), null));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Monday);\n\n//# sourceURL=webpack:///./client/components/ShiftTimes.jsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _ShiftRows_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ShiftRows.jsx */ \"./client/components/ShiftRows.jsx\");\n\n\n\nvar ShiftTimes = function ShiftTimes() {\n  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h3\", null, \"Monday\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ShiftRows_jsx__WEBPACK_IMPORTED_MODULE_1__[\"default\"], null));\n};\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (Monday);\n\n//# sourceURL=webpack:///./client/components/ShiftTimes.jsx?");
 
 /***/ }),
 
