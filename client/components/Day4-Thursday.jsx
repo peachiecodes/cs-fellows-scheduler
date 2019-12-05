@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import WeekdayRows from './WeekdayRows.jsx';
+import ThursdayRows from './ThursdayRows.jsx';
 
 const Thursday = () => {
   return (
     <div>
       <h3>Thursday</h3>
-      <WeekdayRows />
+      <ThursdayRows />
     </div>
   )
 }
