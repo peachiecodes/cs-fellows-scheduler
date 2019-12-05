@@ -13,7 +13,7 @@ import ShiftTimes from './components/ShiftTimes.jsx'
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(7, 0.13fr);
+  grid-template-columns: repeat(7, 0.11fr);
   grid-template-rows: repeat(50px, 9);
   grid-gap: 2px;
 `
@@ -26,7 +26,7 @@ export const Item = styled.div`
   ${({ color = chroma.random() }) =>
     css`
       background-color: ${color};
-      font-size: 18px;
+      font-size: 15px;
       font-family: 'Nunito Sans', sans-serif;
       font-weight: bold;
     `}
