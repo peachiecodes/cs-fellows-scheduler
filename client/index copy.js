@@ -11,24 +11,24 @@ import Friday from './components/Day5-Friday.jsx'
 import Saturday from './components/Day6-Saturday.jsx'
 import ShiftTimes from './components/ShiftTimes.jsx'
 
+// styled components
 export const Grid = styled.div`
-  display: grid;
+  display: grid
   grid-template-columns: repeat(7, 0.13fr);
-  grid-template-rows: repeat(50px, 9);
-  grid-gap: 2px;
+  grid-template-rows: repeat(50px, 9)
 `
 
 export const Item = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: .5rem;
+  display: flex
+  justify-content: center
+  padding: .5rem
 
   ${({ color = chroma.random() }) =>
     css`
-      background-color: ${color};
-      font-size: 18px;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: bold;
+      background-color: ${color}
+      color: ${chroma.contrast(color, "black") >= 4 ? "black" : "white"}
+      font-size: 18px
+      font-weight: bold
     `}
 `;
 
@@ -37,6 +37,8 @@ const StyledColumn = styled.div`
   border-radius: 3px;
 `;
 
+
+// actual app
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -54,7 +56,6 @@ class App extends React.Component {
     console.log('handleSUBMIT value from state: ', this.state.value);
     event.preventDefault();
   }
-
   
   render() {
     return (
@@ -65,7 +66,7 @@ class App extends React.Component {
           </label>
           <input type="submit" value="Submit" />
         </form>
-        <p></p>
+
         <Grid>
           <StyledColumn>
             <Item>
