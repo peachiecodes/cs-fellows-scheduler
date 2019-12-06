@@ -10,11 +10,15 @@ import Thursday from './components/Day4-Thursday.jsx'
 import Friday from './components/Day5-Friday.jsx'
 import Saturday from './components/Day6-Saturday.jsx'
 import ShiftTimes from './components/ShiftTimes.jsx'
+import NameDivs from './components/NameDivs.jsx'
+
+export const peach = '#fcc5c0';
+export const gray = '#'
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(7, 0.11fr);
-  grid-template-rows: repeat(50px, 9);
+  /* grid-template-rows: repeat(9, 10px); */
   grid-gap: 2px;
 `
 
@@ -37,6 +41,8 @@ const StyledColumn = styled.div`
   border-radius: 3px;
 `;
 
+// stores the person's divs
+let nameDivs = [];
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -50,22 +56,17 @@ class App extends React.Component {
     this.setState({ value: event.target.value.toUpperCase() });
   }
 
+  // submits the value and produces 6 name divs
   handleSubmit(event) {
-    console.log('handleSUBMIT value from state: ', this.state.value);
+    // reset nameDiv so that no other name is produced other than the one that was submitted
+    nameDivs = [];
+    console.log('nameDivs has been reset!')
     event.preventDefault();
   }
-
   
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Name: <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-        <p></p>
         <Grid>
           <StyledColumn>
             <Item>
@@ -109,6 +110,16 @@ class App extends React.Component {
             </Item>
           </StyledColumn >
         </Grid>
+
+        <p></p>
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            Name: <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+
+        <NameDivs />
       </div>
     )
   }
