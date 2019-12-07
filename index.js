@@ -17,7 +17,7 @@ export const gray = '#'
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: .07fr repeat(6, 0.09fr);
+  grid-template-columns: .07fr repeat(6, 0.1fr);
   /* grid-template-rows: 20px repeat(8, 50px); */
   grid-gap: 12px;
 `
