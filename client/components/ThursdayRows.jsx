@@ -9,7 +9,7 @@ const StyledColumn = styled.div`
 const ThursdayRows = () => {
   const rows = [];
   for (let i = 0; i < 8; i += 1) {
-    if (i === 5) rows.push(<center><p><StyledColumn><div id="row">THURSDAY ONLY</div></StyledColumn></p></center>)
+    if (i === 5) rows.push(<center><p><StyledColumn><div id="row">PARTY</div></StyledColumn></p></center>)
     else rows.push(<center><p><StyledColumn><div id="row">weekday row</div></StyledColumn></p></center>)
   }
   return (
