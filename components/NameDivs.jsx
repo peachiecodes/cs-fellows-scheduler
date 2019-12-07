@@ -5,7 +5,7 @@ import Draggable, { DraggableCore } from 'react-draggable';
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 0.08fr);
+  grid-template-columns: repeat(6, 0.075fr);
   grid-template-rows: repeat(9, 25px);
   grid-gap: 6px;
 `
