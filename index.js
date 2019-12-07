@@ -17,11 +17,10 @@ export const gray = '#'
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: .1fr repeat(6, 0.15fr);
+  grid-template-columns: .1fr repeat(6, 0.11fr);
   /* grid-template-rows: 20px repeat(8, 50px); */
   grid-gap: 12px;
 `
-
 export const Item = styled.div`
   display: flex;
   justify-content: center;
@@ -30,10 +29,11 @@ export const Item = styled.div`
   ${({ color = chroma.random() }) =>
     css`
       background-color: grey;
-      font-size: 15px;
+      font-size: 13px;
       color: white;
       font-family: 'Nunito Sans', sans-serif;
       font-weight: bold;
+      /* border-radius: 3px; */
     `}
 `;
 

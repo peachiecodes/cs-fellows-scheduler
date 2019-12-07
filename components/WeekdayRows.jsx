@@ -6,11 +6,26 @@ const StyledColumn = styled.div`
   border-radius: 3px;
 `;
 
+const StyledNA = styled.div`
+  background-color: grey;
+  border-radius: 3px;
+`;
+
 const WeekdayRows = () => {
   const rows = [];
   for (let i = 0; i < 8; i += 1) {
-    if (i === 5) rows.push(<center><p><StyledColumn><div id="row">-----------------</div></StyledColumn></p></center>)
-    else rows.push(<center><p><StyledColumn><div id="row">weekday row</div></StyledColumn></p></center>)
+    if (i === 5) rows.push(<center><p><StyledNA><div id="row">‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎</div></StyledNA></p></center>)
+    else rows.push(
+      <center>
+        <p>
+          <StyledColumn>
+            {/* FYI: invisible space between div tags */}
+            <div id="row">
+               ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎  ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎  ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎  ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎
+            </div>
+          </StyledColumn>
+        </p>
+      </center>)
   }
   return (
     <div>
