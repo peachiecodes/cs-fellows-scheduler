@@ -7,14 +7,14 @@ const TimesAsRows = () => {
   // }
   return (
     <div>
-      <div id="row"><h4>9am - 6pm</h4></div>
-      <div id="row"><h4>10am - 7pm</h4></div>
-      <div id="row"><h4>10am - 7pm</h4></div>
-      <div id="row"><h4>11am - 8pm</h4></div>
-      <div id="row"><h4>11am - 8pm</h4></div>
-      <div id="row"><h4>1pm - 10pm</h4></div>
-      <div id="row"><h4>Engineering</h4></div>
-      <div id="row"><h4>OFF</h4></div>
+      <p><div id="row"><font color="powderblue">9am - 6pm</font></div></p>
+      <p><div id="row"><font color="powderblue">10am - 7pm</font></div></p>
+      <p><div id="row"><font color="powderblue">10am - 7pm</font></div></p >
+      <p><div id="row"><font color="powderblue">11am - 8pm</font></div></p >
+      <p><div id="row"><font color="powderblue">11am - 8pm</font></div></p >
+      <p><div id="row"><font color="powderblue">1pm - 10pm</font></div></p >
+      <p><div id="row"><font color="pink">Engineering</font></div></p>
+      <p><div id="row"><font color="salmon">OFF</font></div> </p>
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-DOM';
+import ReactDOM from 'react-dom';
 import chroma from "chroma-js";
 import styled, { css } from 'styled-components';
 
@@ -17,9 +17,9 @@ export const gray = '#'
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(7, 0.11fr);
-  /* grid-template-rows: repeat(9, 10px); */
-  grid-gap: 2px;
+  grid-template-columns: .08fr .11fr .11fr .11fr .11fr .11fr .11fr;
+  /* grid-template-rows: 20px repeat(8, 50px); */
+  grid-gap: 12px;
 `
 
 export const Item = styled.div`
@@ -29,8 +29,9 @@ export const Item = styled.div`
 
   ${({ color = chroma.random() }) =>
     css`
-      background-color: ${color};
+      background-color: grey;
       font-size: 15px;
+      color: white;
       font-family: 'Nunito Sans', sans-serif;
       font-weight: bold;
     `}
@@ -42,11 +43,11 @@ const StyledColumn = styled.div`
 `;
 
 // stores the person's divs
-let nameDivs = [];
 class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = { value: '' };
+    
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -56,11 +57,7 @@ class App extends React.Component {
     this.setState({ value: event.target.value.toUpperCase() });
   }
 
-  // submits the value and produces 6 name divs
   handleSubmit(event) {
-    // reset nameDiv so that no other name is produced other than the one that was submitted
-    nameDivs = [];
-    console.log('nameDivs has been reset!')
     event.preventDefault();
   }
   
@@ -112,12 +109,12 @@ class App extends React.Component {
         </Grid>
 
         <p></p>
-        <form onSubmit={this.handleSubmit}>
+        {/* <form onSubmit={this.handleSubmit}>
           <label>
             Name: <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
           </label>
           <input type="submit" value="Submit" />
-        </form>
+        </form> */}
 
         <NameDivs />
       </div>
@@ -126,5 +123,3 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
-

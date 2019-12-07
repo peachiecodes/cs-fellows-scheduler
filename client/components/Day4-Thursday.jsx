@@ -4,8 +4,8 @@ import ThursdayRows from './ThursdayRows.jsx';
 const Thursday = () => {
   return (
     <div>
-      <h3>Thursday</h3>
-      <ThursdayRows />
+      <center><h3><font color="#414c7a">Thursday</font></h3>
+      </center><ThursdayRows />
     </div>
   )
 }

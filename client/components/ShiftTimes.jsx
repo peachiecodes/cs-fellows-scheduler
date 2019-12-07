@@ -10,8 +10,8 @@ const StyledColumn = styled.div`
 const ShiftTimes = () => {
   return (
     <div>
-        <h3>Shifts</h3>
-        <TimesAsRows />
+      <center><h3><font color="#414c7a">Shifts</font></h3>
+        </center><TimesAsRows />
     </div>
   )
 }

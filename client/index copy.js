@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-DOM';
+import ReactDOM from 'react-dom';
 import chroma from "chroma-js";
 import styled, { css } from 'styled-components';
 

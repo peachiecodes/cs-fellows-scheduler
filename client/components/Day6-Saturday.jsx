@@ -4,8 +4,8 @@ import WeekdayRows from './WeekdayRows.jsx';
 const Saturday = () => {
   return (
     <div>
-      <h3>Saturday</h3>
-      <WeekdayRows />
+      <center><h3><font color="#414c7a">Saturday</font></h3>
+      </center><WeekdayRows />
     </div>
   )
 }
