@@ -6,14 +6,14 @@ import Draggable, { DraggableCore } from 'react-draggable';
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 0.08fr);
-  grid-template-rows: repeat(9, 25px);
-  grid-gap: 6px;
+  grid-template-rows: repeat(9, 20px);
+  grid-gap: 10px;
 `
 
 export const ItemJoel = styled.div`
   display: flex;
   justify-content: center;
-  padding: .1rem;
+  padding: 0rem;
   border-radius: 3px;
 
   ${({ color = chroma.random() }) =>
@@ -28,7 +28,7 @@ export const ItemJoel = styled.div`
 export const ItemAriel = styled.div`
   display: flex;
   justify-content: center;
-  padding: .1rem;
+  padding: 0rem;
   border-radius: 3px;
 
   ${({ color = chroma.random() }) =>
@@ -43,7 +43,7 @@ export const ItemAriel = styled.div`
 export const ItemDave = styled.div`
   display: flex;
   justify-content: center;
-  padding: .1rem;
+  padding: 0rem;
   border-radius: 3px;
 
   ${({ color = chroma.random() }) =>
@@ -58,7 +58,7 @@ export const ItemDave = styled.div`
 export const ItemRuth = styled.div`
   display: flex;
   justify-content: center;
-  padding: .1rem;
+  padding: 0rem;
   border-radius: 3px;
 
   ${({ color = chroma.random() }) =>
@@ -73,7 +73,7 @@ export const ItemRuth = styled.div`
 export const ItemSam = styled.div`
   display: flex;
   justify-content: center;
-  padding: .1rem;
+  padding: 0rem;
   border-radius: 3px;
 
   ${({ color = chroma.random() }) =>
@@ -88,7 +88,7 @@ export const ItemSam = styled.div`
 export const ItemAlex = styled.div`
   display: flex;
   justify-content: center;
-  padding: .1rem;
+  padding: 0rem;
   border-radius: 3px;
 
   ${({ color = chroma.random() }) =>
@@ -103,7 +103,7 @@ export const ItemAlex = styled.div`
 export const ItemAustin = styled.div`
   display: flex;
   justify-content: center;
-  padding: .1rem;
+  padding: 0rem;
   border-radius: 3px;
 
   ${({ color = chroma.random() }) =>
@@ -118,7 +118,7 @@ export const ItemAustin = styled.div`
 export const ItemBrian = styled.div`
   display: flex;
   justify-content: center;
-  padding: .1rem;
+  padding: 0rem;
   border-radius: 3px;
 
   ${({ color = chroma.random() }) =>
