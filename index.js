@@ -3,38 +3,25 @@ import ReactDOM from 'react-dom';
 import chroma from "chroma-js";
 import styled, { css } from 'styled-components';
 
-import Monday from './components/Day1-Monday.jsx'
-import Tuesday from './components/Day2-Tuesday.jsx'
-import Wednesday from './components/Day3-Wednesday.jsx'
-import Thursday from './components/Day4-Thursday.jsx'
-import Friday from './components/Day5-Friday.jsx'
-import Saturday from './components/Day6-Saturday.jsx'
-import ShiftTimes from './components/ShiftTimes.jsx'
-import NameDivs from './components/NameDivs.jsx'
+import Week from './components/Week.jsx'
 
 export const peach = '#fcc5c0';
 export const gray = '#'
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: 100px repeat(6, 145px);
-  /* grid-template-rows: 20px repeat(8, 50px); */
-  grid-gap: 12px;
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: autofill;
 `
 export const Item = styled.div`
   display: flex;
   justify-content: center;
   padding: .5rem;
-
-  ${({ color = chroma.random() }) =>
-    css`
-      background-color: grey;
-      font-size: 13px;
-      color: white;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: bold;
-      /* border-radius: 3px; */
-    `}
+  background-color: grey;
+  font-size: 13px;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
 `;
 
 const StyledColumn = styled.div`
@@ -46,77 +33,19 @@ const StyledColumn = styled.div`
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: '' };
+    this.state = { weekNumber: [1, 2, 3, 4, 5, 6] };
     
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
-
-  handleChange(event) {
-    console.log('handlechange value: ', event.target.value)
-    this.setState({ value: event.target.value.toUpperCase() });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
-  }
-  
   render() {
+    const week = [];
+    for (let i = 0; i < this.state.weekNumber.length; i += 1) {
+      week.push(<Week weekNumber={this.state.weekNumber[i]} />);
+    }
     return (
       <div>
-        <Grid>
-          <StyledColumn>
-            <Item>
-              <ShiftTimes />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Monday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Tuesday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Wednesday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Thursday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Friday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Saturday />
-            </Item>
-          </StyledColumn >
-        </Grid>
-
-        <p></p>
-        {/* <form onSubmit={this.handleSubmit}>
-          <label>
-            Name: <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form> */}
-
-        <NameDivs />
+        {week}
       </div>
     )
   }
