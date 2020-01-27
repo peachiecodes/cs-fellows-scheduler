@@ -9,15 +9,18 @@ import Wednesday from './components/Day3-Wednesday.jsx'
 import Thursday from './components/Day4-Thursday.jsx'
 import Friday from './components/Day5-Friday.jsx'
 import Saturday from './components/Day6-Saturday.jsx'
-import ShiftTimes from './components/ShiftTimes.jsx'
-import NameDivs from './components/NameDivs.jsx'
+
+
+import nonThursShifts from './components/NonThursShifts.jsx'
+import ThursShifts from './components/ThursShifts.jsx'
+import SaturdayShifts from './components/SaturdayShifts.jsx'
 
 export const peach = '#fcc5c0';
 export const gray = '#'
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: 100px repeat(6, 145px);
+  grid-template-columns: repeat(6, 200px);
   grid-gap: 12px;
 `
 export const Item = styled.div`
@@ -47,19 +50,14 @@ class App extends React.Component {
     super(props);
     this.state = { value: '' };
     
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this);
   }
   
   render() {
     return (
       <div>
         <Grid>
-          <StyledColumn>
-            <Item>
-              <ShiftTimes />
-            </Item>
-          </StyledColumn>
 
           <StyledColumn>
             <Item>
@@ -105,8 +103,6 @@ class App extends React.Component {
           </label>
           <input type="submit" value="Submit" />
         </form> */}
-
-        <NameDivs />
       </div>
     )
   }

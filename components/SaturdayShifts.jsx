@@ -7,14 +7,54 @@ const TimesAsRows = () => {
   // }
   return (
     <div>
-      <p><div id="row"><font color="powderblue">Approach: </font></div></p>
-      <p><div id="row"><font color="powderblue">9am - 430pm: </font></div></p>
-      <p><div id="row"><font color="powderblue">9am - 430pm: </font></div></p>
-      <p><div id="row"><font color="powderblue">9am - 430pm: </font></div></p>
-      <p><div id="row"><font color="powderblue">9am - 430pm: </font></div></p>
-      <p><div id="row"><font color="powderblue">9am - 430pm: </font></div></p>
-      <p><div id="row"><font color="pink">Engineering</font></div></p>
-      <p><div id="row"><font color="salmon">OFF</font></div> </p>
+      <p>
+        <div id="row">
+          <font color="powderblue">Approach: </font>
+          <span contentEditable="true">Click</span>
+        </div>
+      </p>
+      <p>
+        <div id="row">
+          <font color="powderblue">9am - 430pm: </font>
+          <span contentEditable="true">Click</span>
+        </div>
+      </p>
+      <p>
+        <div id="row">
+          <font color="powderblue">9am - 430pm: </font>
+          <span contentEditable="true">Click</span>
+        </div>
+      </p>
+      <p>
+        <div id="row">
+          <font color="powderblue">9am - 430pm: </font>
+          <span contentEditable="true">Click</span>
+        </div>
+      </p>
+      <p>
+        <div id="row">
+          <font color="powderblue">9am - 430pm: </font>
+          <span contentEditable="true">Click</span>
+        </div>
+      </p>
+      <p>
+        <div id="row">
+          <font color="powderblue">9am - 430am: </font>
+          <span contentEditable="true">Click</span>
+        </div>
+      </p>
+      <p>
+        <div id="row">
+          <font color="powderblue">Engineering: </font>
+          <span contentEditable="true">Click</span>
+        </div>
+      </p>
+      <p>
+        <div id="row">
+          <font color="powderblue">OFF: </font>
+          <span contentEditable="true">Click</span>
+        </div>
+      </p>
     </div>
   )
 }

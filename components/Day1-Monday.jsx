@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WeekdayRows from './WeekdayRows.jsx';
+import NonThursShifts from './NonThursShifts.jsx';
 import styled from 'styled-components';
 
 const StyledColumn = styled.div`
@@ -16,7 +16,7 @@ const Monday = () => {
               </font>
           </h3>
         </center>
-      <WeekdayRows />
+      <NonThursShifts />
       </div>
   )
 }
