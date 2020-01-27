@@ -11,22 +11,17 @@ export const gray = '#'
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 200px);
-  grid-gap: 12px;
+  grid-template-rows: autofill;
 `
 export const Item = styled.div`
   display: flex;
   justify-content: center;
   padding: .5rem;
-
-  ${({ color = chroma.random() }) =>
-    css`
-      background-color: grey;
-      font-size: 13px;
-      color: white;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: bold;
-      /* border-radius: 3px; */
-    `}
+  background-color: grey;
+  font-size: 13px;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
 `;
 
 const StyledColumn = styled.div`
@@ -38,27 +33,19 @@ const StyledColumn = styled.div`
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: '' };
+    this.state = { weekNumber: [1, 2, 3, 4, 5, 6] };
     
     // this.handleChange = this.handleChange.bind(this);
     // this.handleSubmit = this.handleSubmit.bind(this);
   }
-  
   render() {
+    const week = [];
+    for (let i = 0; i < this.state.weekNumber.length; i += 1) {
+      week.push(<Week weekNumber={this.state.weekNumber[i]} />);
+    }
     return (
       <div>
-        <h2>Week 1</h2>
-        <Week />
-        <h2>Week 2</h2>
-        <Week />
-        <h2>Week 3</h2>
-        <Week />
-        <h2>Week 4</h2>
-        <Week />
-        <h2>Week 5</h2>
-        <Week />
-        <h2>Week 6</h2>
-        <Week />
+        {week}
       </div>
     )
   }

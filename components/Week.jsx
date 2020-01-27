@@ -14,18 +14,31 @@ export const gray = '#'
 
 export const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 200px);
+  grid-template-columns: 50px repeat(6, 200px);
 
 `
 export const Item = styled.div`
   display: flex;
   justify-content: center;
   padding: .5rem;
-      background-color: grey;
-      font-size: 13px;
-      color: white;
-      font-family: 'Nunito Sans', sans-serif;
-      font-weight: bold;
+  background-color: grey;
+  font-size: 13px;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+`;
+
+export const WeekItem = styled.div`
+  background-color: #63667d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  border: 2px solid #26304a;
+  border-radius: 3px;
 `;
 
 const StyledColumn = styled.div`
@@ -34,10 +47,19 @@ const StyledColumn = styled.div`
 `;
 
 // stores the person's divs
-const Week = () => {
+const Week = props => {
   return (
     <div>
       <Grid>
+        <WeekItem>
+          W
+          <br />E
+          <br />E
+          <br />K
+          <br />
+          <br />
+          {props.weekNumber}
+        </WeekItem>
         <StyledColumn>
           <Item>
             <Monday />
