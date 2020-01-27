@@ -18,7 +18,6 @@ export const gray = '#'
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: 100px repeat(6, 145px);
-  /* grid-template-rows: 20px repeat(8, 50px); */
   grid-gap: 12px;
 `
 export const Item = styled.div`
@@ -50,15 +49,6 @@ class App extends React.Component {
     
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    console.log('handlechange value: ', event.target.value)
-    this.setState({ value: event.target.value.toUpperCase() });
-  }
-
-  handleSubmit(event) {
-    event.preventDefault();
   }
   
   render() {

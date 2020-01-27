@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TimesAsRows from './TimesAsRows.jsx';
+import TimesAsRows from './ThursShifts.jsx/index.js.js';
 import styled from 'styled-components';
 
 const StyledColumn = styled.div`
