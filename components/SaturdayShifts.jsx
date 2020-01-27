@@ -7,54 +7,46 @@ const TimesAsRows = () => {
   // }
   return (
     <div>
-      <p>
-        <div id="row">
-          <font color="powderblue">Approach: </font>
+      <div id="row">
+        <p></p>
+        <font color="pink">Approach: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
-        <div id="row">
+      <div id="row">
+        <p></p>
           <font color="powderblue">9am - 430pm: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
-        <div id="row">
+      <div id="row">
+        <p></p>
           <font color="powderblue">9am - 430pm: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
-        <div id="row">
+      <div id="row">
+        <p></p>
           <font color="powderblue">9am - 430pm: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
-        <div id="row">
+      <div id="row">
+        <p></p>
           <font color="powderblue">9am - 430pm: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
-        <div id="row">
+      <div id="row">
+        <p></p>
           <font color="powderblue">9am - 430am: </font>
+        <span contentEditable="true" background-color="#414c7a">Click</span>
+        </div>
+      <div id="row">
+        <p></p>
+        <font color="darkgrey">Engineering: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
-        <div id="row">
-          <font color="powderblue">Engineering: </font>
-          <span contentEditable="true">Click</span>
-        </div>
-      </p>
-      <p>
-        <div id="row">
+      <div id="row">
+        <p></p>
           <font color="powderblue">OFF: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
     </div>
   )
 }

@@ -7,54 +7,46 @@ const TimesAsRows = () => {
   // }
   return (
     <div>
-      <p>
         <div id="row">
-          <font color="powderblue">Approach: </font>
+          <font color="pink">Approach: </font>
           <span contentEditable="true">Click</span>
       </div>
-      </p>
-      <p>
         <div id="row">
+          <p></p>
           <font color="powderblue">9am - 6pm: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
+
         <div id="row">
+          <p></p>
           <font color="powderblue">10am - 7pm: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
         <div id="row">
+          <p></p>
           <font color="powderblue">10am - 7pm: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
         <div id="row">
+          <p></p>
           <font color="powderblue">11am - 8pm: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
-        <div id="row">
+      <div id="row">
+        <p></p>
           <font color="powderblue">1pm - 10pm: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
         <div id="row">
-          <font color="powderblue">Engineering: </font>
+          <p></p>
+        <font color="darkgrey">Engineering: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
-      <p>
         <div id="row">
+          <p></p>
           <font color="powderblue">OFF: </font>
           <span contentEditable="true">Click</span>
         </div>
-      </p>
     </div>
   )
 }

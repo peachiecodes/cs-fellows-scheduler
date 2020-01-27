@@ -3,17 +3,7 @@ import ReactDOM from 'react-dom';
 import chroma from "chroma-js";
 import styled, { css } from 'styled-components';
 
-import Monday from './components/Day1-Monday.jsx'
-import Tuesday from './components/Day2-Tuesday.jsx'
-import Wednesday from './components/Day3-Wednesday.jsx'
-import Thursday from './components/Day4-Thursday.jsx'
-import Friday from './components/Day5-Friday.jsx'
-import Saturday from './components/Day6-Saturday.jsx'
-
-
-import nonThursShifts from './components/NonThursShifts.jsx'
-import ThursShifts from './components/ThursShifts.jsx'
-import SaturdayShifts from './components/SaturdayShifts.jsx'
+import Week from './components/Week.jsx'
 
 export const peach = '#fcc5c0';
 export const gray = '#'
@@ -57,52 +47,18 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Grid>
-
-          <StyledColumn>
-            <Item>
-              <Monday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Tuesday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Wednesday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Thursday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Friday />
-            </Item>
-          </StyledColumn>
-
-          <StyledColumn>
-            <Item>
-              <Saturday />
-            </Item>
-          </StyledColumn >
-        </Grid>
-
-        <p></p>
-        {/* <form onSubmit={this.handleSubmit}>
-          <label>
-            Name: <input type="text" name="name" value={this.state.value} onChange={this.handleChange} />
-          </label>
-          <input type="submit" value="Submit" />
-        </form> */}
+        <h2>Week 1</h2>
+        <Week />
+        <h2>Week 2</h2>
+        <Week />
+        <h2>Week 3</h2>
+        <Week />
+        <h2>Week 4</h2>
+        <Week />
+        <h2>Week 5</h2>
+        <Week />
+        <h2>Week 6</h2>
+        <Week />
       </div>
     )
   }
